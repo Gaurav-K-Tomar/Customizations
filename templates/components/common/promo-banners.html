@@ -1,0 +1,839 @@
+{{#if category.name '==' theme_settings.cat1_promo_name}}
+	{{#if theme_settings.cat1_promo_enable}}
+		<section class="category-promo"
+			data-promo="{{theme_settings.cat1_promo_enable}}"
+			data-promo1-link="{{theme_settings.cat1_promo1_linkA}}{{theme_settings.cat1_promo1_linkB}}"
+			data-promo2-link="{{theme_settings.cat1_promo2_linkA}}{{theme_settings.cat1_promo2_linkB}}" >
+
+			
+			<a href="{{theme_settings.cat1_promo1_linkA}}{{theme_settings.cat1_promo1_linkB}}" class="product-promo">
+				<div class="product-promo-description">
+					<p class="promo-title">{{theme_settings.cat1_promo1_name}}</p>
+					<p class="promo-details">{{theme_settings.cat1_promo1_descA}}{{theme_settings.cat1_promo1_descB}}</p>
+					<button class="promo-button">
+						<p class="button">Shop Now</p>
+					</button>
+				</div>
+				<div class="product-promo-figure">
+					<img class="promo-image" src="https://cdn11.bigcommerce.com/s-upqfr8eszt/product_images/uploaded_images/{{theme_settings.cat1_promo1_image}}" alt="{{theme_settings.cat1_promo1_name}}">
+					<div class="promo-price">
+						{{#if theme_settings.cat1_promo1_sale_enable}}
+							<p class="promo-was"><span>${{theme_settings.cat1_promo1_og_price}}</span></p>
+							<p class="promo-now">NOW <span>${{theme_settings.cat1_promo1_sale_price}}</span></p>
+						{{else}}
+							<p class="promo-now"><span>${{theme_settings.cat1_promo1_og_price}}</span></p>
+						{{/if}}
+					</div>
+				</div>
+			</a>
+
+			<a href="{{theme_settings.cat1_promo2_linkA}}{{theme_settings.cat1_promo2_linkB}}" class="product-promo">
+				<div class="product-promo-description">
+					<p class="promo-title">{{theme_settings.cat1_promo2_name}}</p>
+					<p class="promo-details">{{theme_settings.cat1_promo2_descA}}{{theme_settings.cat1_promo2_descB}}</p>
+					<button class="promo-button">
+						<p class="button">Shop Now</p>
+					</button>
+				</div>
+				<div class="product-promo-figure">
+					<img class="promo-image"
+						src="https://cdn11.bigcommerce.com/s-upqfr8eszt/product_images/uploaded_images/{{theme_settings.cat1_promo2_image}}" alt="{{theme_settings.cat1_promo2_name}}">
+					<div class="promo-price">
+						{{#if theme_settings.cat1_promo2_sale_enable}}
+							<p class="promo-was"><span>${{theme_settings.cat1_promo2_og_price}}</span></p>
+							<p class="promo-now">NOW <span>${{theme_settings.cat1_promo2_sale_price}}</span></p>
+						{{else}}
+							<p class="promo-now"><span>${{theme_settings.cat1_promo2_og_price}}</span></p>
+						{{/if}}
+					</div>
+				</div>
+			</a>
+
+		</section>
+	{{/if}}
+
+{{else if category.name '==' theme_settings.cat2_promo_name}}
+	{{#if theme_settings.cat2_promo_enable}}
+		<section class="category-promo" data-promo="{{theme_settings.cat2_promo_enable}}"
+			data-promo1-link="{{theme_settings.cat2_promo1_linkA}}{{theme_settings.cat2_promo1_linkB}}"
+			data-promo2-link="{{theme_settings.cat2_promo2_linkA}}{{theme_settings.cat2_promo2_linkB}}">
+
+			
+			<a href="{{theme_settings.cat2_promo1_linkA}}{{theme_settings.cat2_promo1_linkB}}" class="product-promo">
+				<div class="product-promo-description">
+					<p class="promo-title">{{theme_settings.cat2_promo1_name}}</p>
+					<p class="promo-details">{{theme_settings.cat2_promo1_descA}}{{theme_settings.cat2_promo1_descB}}</p>
+					<button class="promo-button">
+						<p class="button">Shop Now</p>
+					</button>
+				</div>
+				<div class="product-promo-figure">
+					<img class="promo-image"
+						src="https://cdn11.bigcommerce.com/s-upqfr8eszt/product_images/uploaded_images/{{theme_settings.cat2_promo1_image}}"
+						alt="{{theme_settings.cat2_promo1_name}}">
+					<div class="promo-price">
+						{{#if theme_settings.cat2_promo1_sale_enable}}
+						<p class="promo-was"><span>${{theme_settings.cat2_promo1_og_price}}</span></p>
+						<p class="promo-now">NOW <span>${{theme_settings.cat2_promo1_sale_price}}</span></p>
+						{{else}}
+						<p class="promo-now"><span>${{theme_settings.cat2_promo1_og_price}}</span></p>
+						{{/if}}
+					</div>
+				</div>
+			</a>
+
+			<a href="{{theme_settings.cat2_promo2_linkA}}{{theme_settings.cat2_promo2_linkB}}" class="product-promo">
+				<div class="product-promo-description">
+					<p class="promo-title">{{theme_settings.cat2_promo2_name}}</p>
+					<p class="promo-details">{{theme_settings.cat2_promo2_descA}}{{theme_settings.cat2_promo2_descB}}</p>
+					<button class="promo-button">
+						<p class="button">Shop Now</p>
+					</button>
+				</div>
+				<div class="product-promo-figure">
+					<img class="promo-image"
+						src="https://cdn11.bigcommerce.com/s-upqfr8eszt/product_images/uploaded_images/{{theme_settings.cat2_promo2_image}}"
+						alt="{{theme_settings.cat2_promo2_name}}">
+					<div class="promo-price">
+						{{#if theme_settings.cat2_promo2_sale_enable}}
+						<p class="promo-was"><span>${{theme_settings.cat2_promo2_og_price}}</span></p>
+						<p class="promo-now">NOW <span>${{theme_settings.cat2_promo2_sale_price}}</span></p>
+						{{else}}
+						<p class="promo-now"><span>${{theme_settings.cat2_promo2_og_price}}</span></p>
+						{{/if}}
+					</div>
+				</div>
+			</a>
+
+		</section>
+	{{/if}}
+
+{{else if category.name '==' theme_settings.cat3_promo_name}}
+	{{#if theme_settings.cat3_promo_enable}}
+			<section class="category-promo" data-promo="{{theme_settings.cat3_promo_enable}}"
+				data-promo1-link="{{theme_settings.cat3_promo1_linkA}}{{theme_settings.cat3_promo1_linkB}}"
+				data-promo2-link="{{theme_settings.cat3_promo2_linkA}}{{theme_settings.cat3_promo2_linkB}}">
+
+				
+				<a href="{{theme_settings.cat3_promo1_linkA}}{{theme_settings.cat3_promo1_linkB}}" class="product-promo">
+					<div class="product-promo-description">
+						<p class="promo-title">{{theme_settings.cat3_promo1_name}}</p>
+						<p class="promo-details">{{theme_settings.cat3_promo1_descA}}{{theme_settings.cat3_promo1_descB}}</p>
+						<button class="promo-button">
+							<p class="button">Shop Now</p>
+						</button>
+					</div>
+					<div class="product-promo-figure">
+						<img class="promo-image"
+							src="https://cdn11.bigcommerce.com/s-upqfr8eszt/product_images/uploaded_images/{{theme_settings.cat3_promo1_image}}"
+							alt="{{theme_settings.cat3_promo1_name}}">
+						<div class="promo-price">
+							{{#if theme_settings.cat3_promo1_sale_enable}}
+							<p class="promo-was"><span>${{theme_settings.cat3_promo1_og_price}}</span></p>
+							<p class="promo-now">NOW <span>${{theme_settings.cat3_promo1_sale_price}}</span></p>
+							{{else}}
+							<p class="promo-now"><span>${{theme_settings.cat3_promo1_og_price}}</span></p>
+							{{/if}}
+						</div>
+					</div>
+				</a>
+
+				<a href="{{theme_settings.cat3_promo2_linkA}}{{theme_settings.cat3_promo2_linkB}}" class="product-promo">
+					<div class="product-promo-description">
+						<p class="promo-title">{{theme_settings.cat3_promo2_name}}</p>
+						<p class="promo-details">{{theme_settings.cat3_promo2_descA}}{{theme_settings.cat3_promo2_descB}}</p>
+						<button class="promo-button">
+							<p class="button">Shop Now</p>
+						</button>
+					</div>
+					<div class="product-promo-figure">
+						<img class="promo-image"
+							src="https://cdn11.bigcommerce.com/s-upqfr8eszt/product_images/uploaded_images/{{theme_settings.cat3_promo2_image}}"
+							alt="{{theme_settings.cat3_promo2_name}}">
+						<div class="promo-price">
+							{{#if theme_settings.cat3_promo2_sale_enable}}
+							<p class="promo-was"><span>${{theme_settings.cat3_promo2_og_price}}</span></p>
+							<p class="promo-now">NOW <span>${{theme_settings.cat3_promo2_sale_price}}</span></p>
+							{{else}}
+							<p class="promo-now"><span>${{theme_settings.cat3_promo2_og_price}}</span></p>
+							{{/if}}
+						</div>
+					</div>
+				</a>
+
+			</section>
+	{{/if}}
+
+{{else if category.name '==' theme_settings.cat4_promo_name}}
+	{{#if theme_settings.cat4_promo_enable}}
+		<section class="category-promo" data-promo="{{theme_settings.cat4_promo_enable}}"
+			data-promo1-link="{{theme_settings.cat4_promo1_linkA}}{{theme_settings.cat4_promo1_linkB}}"
+			data-promo2-link="{{theme_settings.cat4_promo2_linkA}}{{theme_settings.cat4_promo2_linkB}}">
+
+			
+			<a href="{{theme_settings.cat4_promo1_linkA}}{{theme_settings.cat4_promo1_linkB}}" class="product-promo">
+				<div class="product-promo-description">
+					<p class="promo-title">{{theme_settings.cat4_promo1_name}}</p>
+					<p class="promo-details">{{theme_settings.cat4_promo1_descA}}{{theme_settings.cat4_promo1_descB}}</p>
+					<button class="promo-button">
+						<p class="button">Shop Now</p>
+					</button>
+				</div>
+				<div class="product-promo-figure">
+					<img class="promo-image"
+						src="https://cdn11.bigcommerce.com/s-upqfr8eszt/product_images/uploaded_images/{{theme_settings.cat4_promo1_image}}"
+						alt="{{theme_settings.cat4_promo1_name}}">
+					<div class="promo-price">
+						{{#if theme_settings.cat4_promo1_sale_enable}}
+						<p class="promo-was"><span>${{theme_settings.cat4_promo1_og_price}}</span></p>
+						<p class="promo-now">NOW <span>${{theme_settings.cat4_promo1_sale_price}}</span></p>
+						{{else}}
+						<p class="promo-now"><span>${{theme_settings.cat4_promo1_og_price}}</span></p>
+						{{/if}}
+					</div>
+				</div>
+			</a>
+
+			<a href="{{theme_settings.cat4_promo2_linkA}}{{theme_settings.cat4_promo2_linkB}}" class="product-promo">
+				<div class="product-promo-description">
+					<p class="promo-title">{{theme_settings.cat4_promo2_name}}</p>
+					<p class="promo-details">{{theme_settings.cat4_promo2_descA}}{{theme_settings.cat4_promo2_descB}}</p>
+					<button class="promo-button">
+						<p class="button">Shop Now</p>
+					</button>
+				</div>
+				<div class="product-promo-figure">
+					<img class="promo-image"
+						src="https://cdn11.bigcommerce.com/s-upqfr8eszt/product_images/uploaded_images/{{theme_settings.cat4_promo2_image}}"
+						alt="{{theme_settings.cat4_promo2_name}}">
+					<div class="promo-price">
+						{{#if theme_settings.cat4_promo2_sale_enable}}
+						<p class="promo-was"><span>${{theme_settings.cat4_promo2_og_price}}</span></p>
+						<p class="promo-now">NOW <span>${{theme_settings.cat4_promo2_sale_price}}</span></p>
+						{{else}}
+						<p class="promo-now"><span>${{theme_settings.cat4_promo2_og_price}}</span></p>
+						{{/if}}
+					</div>
+				</div>
+			</a>
+
+		</section>
+	{{/if}}
+
+{{else if category.name '==' theme_settings.cat5_promo_name}}
+	{{#if theme_settings.cat5_promo_enable}}
+		<section class="category-promo" data-promo="{{theme_settings.cat5_promo_enable}}"
+			data-promo1-link="{{theme_settings.cat5_promo1_linkA}}{{theme_settings.cat5_promo1_linkB}}"
+			data-promo2-link="{{theme_settings.cat5_promo2_linkA}}{{theme_settings.cat5_promo2_linkB}}">
+
+			
+			<a href="{{theme_settings.cat5_promo1_linkA}}{{theme_settings.cat5_promo1_linkB}}" class="product-promo">
+				<div class="product-promo-description">
+					<p class="promo-title">{{theme_settings.cat5_promo1_name}}</p>
+					<p class="promo-details">{{theme_settings.cat5_promo1_descA}}{{theme_settings.cat5_promo1_descB}}</p>
+					<button class="promo-button">
+						<p class="button">Shop Now</p>
+					</button>
+				</div>
+				<div class="product-promo-figure">
+					<img class="promo-image"
+						src="https://cdn11.bigcommerce.com/s-upqfr8eszt/product_images/uploaded_images/{{theme_settings.cat5_promo1_image}}"
+						alt="{{theme_settings.cat5_promo1_name}}">
+					<div class="promo-price">
+						{{#if theme_settings.cat5_promo1_sale_enable}}
+						<p class="promo-was"><span>${{theme_settings.cat5_promo1_og_price}}</span></p>
+						<p class="promo-now">NOW <span>${{theme_settings.cat5_promo1_sale_price}}</span></p>
+						{{else}}
+						<p class="promo-now"><span>${{theme_settings.cat5_promo1_og_price}}</span></p>
+						{{/if}}
+					</div>
+				</div>
+			</a>
+
+			<a href="{{theme_settings.cat5_promo2_linkA}}{{theme_settings.cat5_promo2_linkB}}" class="product-promo">
+				<div class="product-promo-description">
+					<p class="promo-title">{{theme_settings.cat5_promo2_name}}</p>
+					<p class="promo-details">{{theme_settings.cat5_promo2_descA}}{{theme_settings.cat5_promo2_descB}}</p>
+					<button class="promo-button">
+						<p class="button">Shop Now</p>
+					</button>
+				</div>
+				<div class="product-promo-figure">
+					<img class="promo-image"
+						src="https://cdn11.bigcommerce.com/s-upqfr8eszt/product_images/uploaded_images/{{theme_settings.cat5_promo2_image}}"
+						alt="{{theme_settings.cat5_promo2_name}}">
+					<div class="promo-price">
+						{{#if theme_settings.cat5_promo2_sale_enable}}
+						<p class="promo-was"><span>${{theme_settings.cat5_promo2_og_price}}</span></p>
+						<p class="promo-now">NOW <span>${{theme_settings.cat5_promo2_sale_price}}</span></p>
+						{{else}}
+						<p class="promo-now"><span>${{theme_settings.cat5_promo2_og_price}}</span></p>
+						{{/if}}
+					</div>
+				</div>
+			</a>
+
+		</section>
+	{{/if}}
+
+{{else if category.name '==' theme_settings.cat6_promo_name}}
+	{{#if theme_settings.cat6_promo_enable}}
+		<section class="category-promo" data-promo="{{theme_settings.cat6_promo_enable}}"
+			data-promo1-link="{{theme_settings.cat6_promo1_linkA}}{{theme_settings.cat6_promo1_linkB}}"
+			data-promo2-link="{{theme_settings.cat6_promo2_linkA}}{{theme_settings.cat6_promo2_linkB}}">
+
+			
+			<a href="{{theme_settings.cat6_promo1_linkA}}{{theme_settings.cat6_promo1_linkB}}" class="product-promo">
+				<div class="product-promo-description">
+					<p class="promo-title">{{theme_settings.cat6_promo1_name}}</p>
+					<p class="promo-details">{{theme_settings.cat6_promo1_descA}}{{theme_settings.cat6_promo1_descB}}</p>
+					<button class="promo-button">
+						<p class="button">Shop Now</p>
+					</button>
+				</div>
+				<div class="product-promo-figure">
+					<img class="promo-image"
+						src="https://cdn11.bigcommerce.com/s-upqfr8eszt/product_images/uploaded_images/{{theme_settings.cat6_promo1_image}}"
+						alt="{{theme_settings.cat6_promo1_name}}">
+					<div class="promo-price">
+						{{#if theme_settings.cat6_promo1_sale_enable}}
+						<p class="promo-was"><span>${{theme_settings.cat6_promo1_og_price}}</span></p>
+						<p class="promo-now">NOW <span>${{theme_settings.cat6_promo1_sale_price}}</span></p>
+						{{else}}
+						<p class="promo-now"><span>${{theme_settings.cat6_promo1_og_price}}</span></p>
+						{{/if}}
+					</div>
+				</div>
+			</a>
+
+			<a href="{{theme_settings.cat6_promo2_linkA}}{{theme_settings.cat6_promo2_linkB}}" class="product-promo">
+				<div class="product-promo-description">
+					<p class="promo-title">{{theme_settings.cat6_promo2_name}}</p>
+					<p class="promo-details">{{theme_settings.cat6_promo2_descA}}{{theme_settings.cat6_promo2_descB}}</p>
+					<button class="promo-button">
+						<p class="button">Shop Now</p>
+					</button>
+				</div>
+				<div class="product-promo-figure">
+					<img class="promo-image"
+						src="https://cdn11.bigcommerce.com/s-upqfr8eszt/product_images/uploaded_images/{{theme_settings.cat6_promo2_image}}"
+						alt="{{theme_settings.cat6_promo2_name}}">
+					<div class="promo-price">
+						{{#if theme_settings.cat6_promo2_sale_enable}}
+						<p class="promo-was"><span>${{theme_settings.cat6_promo2_og_price}}</span></p>
+						<p class="promo-now">NOW <span>${{theme_settings.cat6_promo2_sale_price}}</span></p>
+						{{else}}
+						<p class="promo-now"><span>${{theme_settings.cat6_promo2_og_price}}</span></p>
+						{{/if}}
+					</div>
+				</div>
+			</a>
+
+		</section>
+	{{/if}}
+
+{{else if category.name '==' theme_settings.cat7_promo_name}}
+	{{#if theme_settings.cat7_promo_enable}}
+		<section class="category-promo" data-promo="{{theme_settings.cat7_promo_enable}}"
+			data-promo1-link="{{theme_settings.cat7_promo1_linkA}}{{theme_settings.cat7_promo1_linkB}}"
+			data-promo2-link="{{theme_settings.cat7_promo2_linkA}}{{theme_settings.cat7_promo2_linkB}}">
+
+			
+			<a href="{{theme_settings.cat7_promo1_linkA}}{{theme_settings.cat7_promo1_linkB}}" class="product-promo">
+				<div class="product-promo-description">
+					<p class="promo-title">{{theme_settings.cat7_promo1_name}}</p>
+					<p class="promo-details">{{theme_settings.cat7_promo1_descA}}{{theme_settings.cat7_promo1_descB}}</p>
+					<button class="promo-button">
+						<p class="button">Shop Now</p>
+					</button>
+				</div>
+				<div class="product-promo-figure">
+					<img class="promo-image"
+						src="https://cdn11.bigcommerce.com/s-upqfr8eszt/product_images/uploaded_images/{{theme_settings.cat7_promo1_image}}"
+						alt="{{theme_settings.cat7_promo1_name}}">
+					<div class="promo-price">
+						{{#if theme_settings.cat7_promo1_sale_enable}}
+						<p class="promo-was"><span>${{theme_settings.cat7_promo1_og_price}}</span></p>
+						<p class="promo-now">NOW <span>${{theme_settings.cat7_promo1_sale_price}}</span></p>
+						{{else}}
+						<p class="promo-now"><span>${{theme_settings.cat7_promo1_og_price}}</span></p>
+						{{/if}}
+					</div>
+				</div>
+			</a>
+
+			<a href="{{theme_settings.cat7_promo2_linkA}}{{theme_settings.cat7_promo2_linkB}}" class="product-promo">
+				<div class="product-promo-description">
+					<p class="promo-title">{{theme_settings.cat7_promo2_name}}</p>
+					<p class="promo-details">{{theme_settings.cat7_promo2_descA}}{{theme_settings.cat7_promo2_descB}}</p>
+					<button class="promo-button">
+						<p class="button">Shop Now</p>
+					</button>
+				</div>
+				<div class="product-promo-figure">
+					<img class="promo-image"
+						src="https://cdn11.bigcommerce.com/s-upqfr8eszt/product_images/uploaded_images/{{theme_settings.cat7_promo2_image}}"
+						alt="{{theme_settings.cat7_promo2_name}}">
+					<div class="promo-price">
+						{{#if theme_settings.cat7_promo2_sale_enable}}
+						<p class="promo-was"><span>${{theme_settings.cat7_promo2_og_price}}</span></p>
+						<p class="promo-now">NOW <span>${{theme_settings.cat7_promo2_sale_price}}</span></p>
+						{{else}}
+						<p class="promo-now"><span>${{theme_settings.cat7_promo2_og_price}}</span></p>
+						{{/if}}
+					</div>
+				</div>
+			</a>
+
+		</section>
+	{{/if}}
+
+{{else if category.name '==' theme_settings.cat8_promo_name}}
+	{{#if theme_settings.cat8_promo_enable}}
+		<section class="category-promo" data-promo="{{theme_settings.cat8_promo_enable}}"
+			data-promo1-link="{{theme_settings.cat8_promo1_linkA}}{{theme_settings.cat8_promo1_linkB}}"
+			data-promo2-link="{{theme_settings.cat8_promo2_linkA}}{{theme_settings.cat8_promo2_linkB}}">
+
+			
+			<a href="{{theme_settings.cat8_promo1_linkA}}{{theme_settings.cat8_promo1_linkB}}" class="product-promo">
+				<div class="product-promo-description">
+					<p class="promo-title">{{theme_settings.cat8_promo1_name}}</p>
+					<p class="promo-details">{{theme_settings.cat8_promo1_descA}}{{theme_settings.cat8_promo1_descB}}</p>
+					<button class="promo-button">
+						<p class="button">Shop Now</p>
+					</button>
+				</div>
+				<div class="product-promo-figure">
+					<img class="promo-image"
+						src="https://cdn11.bigcommerce.com/s-upqfr8eszt/product_images/uploaded_images/{{theme_settings.cat8_promo1_image}}"
+						alt="{{theme_settings.cat8_promo1_name}}">
+					<div class="promo-price">
+						{{#if theme_settings.cat8_promo1_sale_enable}}
+						<p class="promo-was"><span>${{theme_settings.cat8_promo1_og_price}}</span></p>
+						<p class="promo-now">NOW <span>${{theme_settings.cat8_promo1_sale_price}}</span></p>
+						{{else}}
+						<p class="promo-now"><span>${{theme_settings.cat8_promo1_og_price}}</span></p>
+						{{/if}}
+					</div>
+				</div>
+			</a>
+
+			<a href="{{theme_settings.cat8_promo2_linkA}}{{theme_settings.cat8_promo2_linkB}}" class="product-promo">
+				<div class="product-promo-description">
+					<p class="promo-title">{{theme_settings.cat8_promo2_name}}</p>
+					<p class="promo-details">{{theme_settings.cat8_promo2_descA}}{{theme_settings.cat8_promo2_descB}}</p>
+					<button class="promo-button">
+						<p class="button">Shop Now</p>
+					</button>
+				</div>
+				<div class="product-promo-figure">
+					<img class="promo-image"
+						src="https://cdn11.bigcommerce.com/s-upqfr8eszt/product_images/uploaded_images/{{theme_settings.cat8_promo2_image}}"
+						alt="{{theme_settings.cat8_promo2_name}}">
+					<div class="promo-price">
+						{{#if theme_settings.cat8_promo2_sale_enable}}
+						<p class="promo-was"><span>${{theme_settings.cat8_promo2_og_price}}</span></p>
+						<p class="promo-now">NOW <span>${{theme_settings.cat8_promo2_sale_price}}</span></p>
+						{{else}}
+						<p class="promo-now"><span>${{theme_settings.cat8_promo2_og_price}}</span></p>
+						{{/if}}
+					</div>
+				</div>
+			</a>
+
+		</section>
+	{{/if}}
+
+{{else if category.name '==' theme_settings.cat9_promo_name}}
+	{{#if theme_settings.cat9_promo_enable}}
+		<section class="category-promo" data-promo="{{theme_settings.cat9_promo_enable}}"
+			data-promo1-link="{{theme_settings.cat9_promo1_linkA}}{{theme_settings.cat9_promo1_linkB}}"
+			data-promo2-link="{{theme_settings.cat9_promo2_linkA}}{{theme_settings.cat9_promo2_linkB}}">
+
+			
+			<a href="{{theme_settings.cat9_promo1_linkA}}{{theme_settings.cat9_promo1_linkB}}" class="product-promo">
+				<div class="product-promo-description">
+					<p class="promo-title">{{theme_settings.cat9_promo1_name}}</p>
+					<p class="promo-details">{{theme_settings.cat9_promo1_descA}}{{theme_settings.cat9_promo1_descB}}</p>
+					<button class="promo-button">
+						<p class="button">Shop Now</p>
+					</button>
+				</div>
+				<div class="product-promo-figure">
+					<img class="promo-image"
+						src="https://cdn11.bigcommerce.com/s-upqfr8eszt/product_images/uploaded_images/{{theme_settings.cat9_promo1_image}}"
+						alt="{{theme_settings.cat9_promo1_name}}">
+					<div class="promo-price">
+						{{#if theme_settings.cat9_promo1_sale_enable}}
+						<p class="promo-was"><span>${{theme_settings.cat9_promo1_og_price}}</span></p>
+						<p class="promo-now">NOW <span>${{theme_settings.cat9_promo1_sale_price}}</span></p>
+						{{else}}
+						<p class="promo-now"><span>${{theme_settings.cat9_promo1_og_price}}</span></p>
+						{{/if}}
+					</div>
+				</div>
+			</a>
+
+			<a href="{{theme_settings.cat9_promo2_linkA}}{{theme_settings.cat9_promo2_linkB}}" class="product-promo">
+				<div class="product-promo-description">
+					<p class="promo-title">{{theme_settings.cat9_promo2_name}}</p>
+					<p class="promo-details">{{theme_settings.cat9_promo2_descA}}{{theme_settings.cat9_promo2_descB}}</p>
+					<button class="promo-button">
+						<p class="button">Shop Now</p>
+					</button>
+				</div>
+				<div class="product-promo-figure">
+					<img class="promo-image"
+						src="https://cdn11.bigcommerce.com/s-upqfr8eszt/product_images/uploaded_images/{{theme_settings.cat9_promo2_image}}"
+						alt="{{theme_settings.cat9_promo2_name}}">
+					<div class="promo-price">
+						{{#if theme_settings.cat9_promo2_sale_enable}}
+						<p class="promo-was"><span>${{theme_settings.cat9_promo2_og_price}}</span></p>
+						<p class="promo-now">NOW <span>${{theme_settings.cat9_promo2_sale_price}}</span></p>
+						{{else}}
+						<p class="promo-now"><span>${{theme_settings.cat9_promo2_og_price}}</span></p>
+						{{/if}}
+					</div>
+				</div>
+			</a>
+
+		</section>
+	{{/if}}
+
+{{else if category.name '==' theme_settings.cat10_promo_name}}
+	{{#if theme_settings.cat10_promo_enable}}
+		<section class="category-promo" data-promo="{{theme_settings.cat10_promo_enable}}"
+			data-promo1-link="{{theme_settings.cat10_promo1_linkA}}{{theme_settings.cat10_promo1_linkB}}"
+			data-promo2-link="{{theme_settings.cat10_promo2_linkA}}{{theme_settings.cat10_promo2_linkB}}">
+
+			
+			<a href="{{theme_settings.cat10_promo1_linkA}}{{theme_settings.cat10_promo1_linkB}}" class="product-promo">
+				<div class="product-promo-description">
+					<p class="promo-title">{{theme_settings.cat10_promo1_name}}</p>
+					<p class="promo-details">{{theme_settings.cat10_promo1_descA}}{{theme_settings.cat10_promo1_descB}}</p>
+					<button class="promo-button">
+						<p class="button">Shop Now</p>
+					</button>
+				</div>
+				<div class="product-promo-figure">
+					<img class="promo-image"
+						src="https://cdn11.bigcommerce.com/s-upqfr8eszt/product_images/uploaded_images/{{theme_settings.cat10_promo1_image}}"
+						alt="{{theme_settings.cat10_promo1_name}}">
+					<div class="promo-price">
+						{{#if theme_settings.cat10_promo1_sale_enable}}
+						<p class="promo-was"><span>${{theme_settings.cat10_promo1_og_price}}</span></p>
+						<p class="promo-now">NOW <span>${{theme_settings.cat10_promo1_sale_price}}</span></p>
+						{{else}}
+						<p class="promo-now"><span>${{theme_settings.cat10_promo1_og_price}}</span></p>
+						{{/if}}
+					</div>
+				</div>
+			</a>
+
+			<a href="{{theme_settings.cat10_promo2_linkA}}{{theme_settings.cat10_promo2_linkB}}" class="product-promo">
+				<div class="product-promo-description">
+					<p class="promo-title">{{theme_settings.cat10_promo2_name}}</p>
+					<p class="promo-details">{{theme_settings.cat10_promo2_descA}}{{theme_settings.cat10_promo2_descB}}</p>
+					<button class="promo-button">
+						<p class="button">Shop Now</p>
+					</button>
+				</div>
+				<div class="product-promo-figure">
+					<img class="promo-image"
+						src="https://cdn11.bigcommerce.com/s-upqfr8eszt/product_images/uploaded_images/{{theme_settings.cat10_promo2_image}}"
+						alt="{{theme_settings.cat10_promo2_name}}">
+					<div class="promo-price">
+						{{#if theme_settings.cat10_promo2_sale_enable}}
+						<p class="promo-was"><span>${{theme_settings.cat10_promo2_og_price}}</span></p>
+						<p class="promo-now">NOW <span>${{theme_settings.cat10_promo2_sale_price}}</span></p>
+						{{else}}
+						<p class="promo-now"><span>${{theme_settings.cat10_promo2_og_price}}</span></p>
+						{{/if}}
+					</div>
+				</div>
+			</a>
+
+		</section>
+	{{/if}}
+
+{{else if category.name '==' theme_settings.cat11_promo_name}}
+	{{#if theme_settings.cat11_promo_enable}}
+		<section class="category-promo" data-promo="{{theme_settings.cat11_promo_enable}}"
+			data-promo1-link="{{theme_settings.cat11_promo1_linkA}}{{theme_settings.cat11_promo1_linkB}}"
+			data-promo2-link="{{theme_settings.cat11_promo2_linkA}}{{theme_settings.cat11_promo2_linkB}}">
+
+			
+			<a href="{{theme_settings.cat11_promo1_linkA}}{{theme_settings.cat11_promo1_linkB}}" class="product-promo">
+				<div class="product-promo-description">
+					<p class="promo-title">{{theme_settings.cat11_promo1_name}}</p>
+					<p class="promo-details">{{theme_settings.cat11_promo1_descA}}{{theme_settings.cat11_promo1_descB}}</p>
+					<button class="promo-button">
+						<p class="button">Shop Now</p>
+					</button>
+				</div>
+				<div class="product-promo-figure">
+					<img class="promo-image"
+						src="https://cdn11.bigcommerce.com/s-upqfr8eszt/product_images/uploaded_images/{{theme_settings.cat11_promo1_image}}"
+						alt="{{theme_settings.cat11_promo1_name}}">
+					<div class="promo-price">
+						{{#if theme_settings.cat11_promo1_sale_enable}}
+						<p class="promo-was"><span>${{theme_settings.cat11_promo1_og_price}}</span></p>
+						<p class="promo-now">NOW <span>${{theme_settings.cat11_promo1_sale_price}}</span></p>
+						{{else}}
+						<p class="promo-now"><span>${{theme_settings.cat11_promo1_og_price}}</span></p>
+						{{/if}}
+					</div>
+				</div>
+			</a>
+
+			<a href="{{theme_settings.cat11_promo2_linkA}}{{theme_settings.cat11_promo2_linkB}}" class="product-promo">
+				<div class="product-promo-description">
+					<p class="promo-title">{{theme_settings.cat11_promo2_name}}</p>
+					<p class="promo-details">{{theme_settings.cat11_promo2_descA}}{{theme_settings.cat11_promo2_descB}}</p>
+					<button class="promo-button">
+						<p class="button">Shop Now</p>
+					</button>
+				</div>
+				<div class="product-promo-figure">
+					<img class="promo-image"
+						src="https://cdn11.bigcommerce.com/s-upqfr8eszt/product_images/uploaded_images/{{theme_settings.cat11_promo2_image}}"
+						alt="{{theme_settings.cat11_promo2_name}}">
+					<div class="promo-price">
+						{{#if theme_settings.cat11_promo2_sale_enable}}
+						<p class="promo-was"><span>${{theme_settings.cat11_promo2_og_price}}</span></p>
+						<p class="promo-now">NOW <span>${{theme_settings.cat11_promo2_sale_price}}</span></p>
+						{{else}}
+						<p class="promo-now"><span>${{theme_settings.cat11_promo2_og_price}}</span></p>
+						{{/if}}
+					</div>
+				</div>
+			</a>
+
+		</section>
+	{{/if}}
+
+{{else if category.name '==' theme_settings.cat12_promo_name}}
+	{{#if theme_settings.cat12_promo_enable}}
+		<section class="category-promo" data-promo="{{theme_settings.cat12_promo_enable}}"
+			data-promo1-link="{{theme_settings.cat12_promo1_linkA}}{{theme_settings.cat12_promo1_linkB}}"
+			data-promo2-link="{{theme_settings.cat12_promo2_linkA}}{{theme_settings.cat12_promo2_linkB}}">
+
+			
+			<a href="{{theme_settings.cat12_promo1_linkA}}{{theme_settings.cat12_promo1_linkB}}" class="product-promo">
+				<div class="product-promo-description">
+					<p class="promo-title">{{theme_settings.cat12_promo1_name}}</p>
+					<p class="promo-details">{{theme_settings.cat12_promo1_descA}}{{theme_settings.cat12_promo1_descB}}</p>
+					<button class="promo-button">
+						<p class="button">Shop Now</p>
+					</button>
+				</div>
+				<div class="product-promo-figure">
+					<img class="promo-image"
+						src="https://cdn11.bigcommerce.com/s-upqfr8eszt/product_images/uploaded_images/{{theme_settings.cat12_promo1_image}}"
+						alt="{{theme_settings.cat12_promo1_name}}">
+					<div class="promo-price">
+						{{#if theme_settings.cat12_promo1_sale_enable}}
+						<p class="promo-was"><span>${{theme_settings.cat12_promo1_og_price}}</span></p>
+						<p class="promo-now">NOW <span>${{theme_settings.cat12_promo1_sale_price}}</span></p>
+						{{else}}
+						<p class="promo-now"><span>${{theme_settings.cat12_promo1_og_price}}</span></p>
+						{{/if}}
+					</div>
+				</div>
+			</a>
+
+			<a href="{{theme_settings.cat12_promo2_linkA}}{{theme_settings.cat12_promo2_linkB}}" class="product-promo">
+				<div class="product-promo-description">
+					<p class="promo-title">{{theme_settings.cat12_promo2_name}}</p>
+					<p class="promo-details">{{theme_settings.cat12_promo2_descA}}{{theme_settings.cat12_promo2_descB}}</p>
+					<button class="promo-button">
+						<p class="button">Shop Now</p>
+					</button>
+				</div>
+				<div class="product-promo-figure">
+					<img class="promo-image"
+						src="https://cdn11.bigcommerce.com/s-upqfr8eszt/product_images/uploaded_images/{{theme_settings.cat12_promo2_image}}"
+						alt="{{theme_settings.cat12_promo2_name}}">
+					<div class="promo-price">
+						{{#if theme_settings.cat12_promo2_sale_enable}}
+						<p class="promo-was"><span>${{theme_settings.cat12_promo2_og_price}}</span></p>
+						<p class="promo-now">NOW <span>${{theme_settings.cat12_promo2_sale_price}}</span></p>
+						{{else}}
+						<p class="promo-now"><span>${{theme_settings.cat12_promo2_og_price}}</span></p>
+						{{/if}}
+					</div>
+				</div>
+			</a>
+
+		</section>
+	{{/if}}
+
+{{else if category.name '==' theme_settings.cat13_promo_name}}
+	{{#if theme_settings.cat13_promo_enable}}
+		<section class="category-promo" data-promo="{{theme_settings.cat13_promo_enable}}"
+			data-promo1-link="{{theme_settings.cat13_promo1_linkA}}{{theme_settings.cat13_promo1_linkB}}"
+			data-promo2-link="{{theme_settings.cat13_promo2_linkA}}{{theme_settings.cat13_promo2_linkB}}">
+
+			
+			<a href="{{theme_settings.cat13_promo1_linkA}}{{theme_settings.cat13_promo1_linkB}}" class="product-promo">
+				<div class="product-promo-description">
+					<p class="promo-title">{{theme_settings.cat13_promo1_name}}</p>
+					<p class="promo-details">{{theme_settings.cat13_promo1_descA}}{{theme_settings.cat13_promo1_descB}}</p>
+					<button class="promo-button">
+						<p class="button">Shop Now</p>
+					</button>
+				</div>
+				<div class="product-promo-figure">
+					<img class="promo-image"
+						src="https://cdn11.bigcommerce.com/s-upqfr8eszt/product_images/uploaded_images/{{theme_settings.cat13_promo1_image}}"
+						alt="{{theme_settings.cat13_promo1_name}}">
+					<div class="promo-price">
+						{{#if theme_settings.cat13_promo1_sale_enable}}
+						<p class="promo-was"><span>${{theme_settings.cat13_promo1_og_price}}</span></p>
+						<p class="promo-now">NOW <span>${{theme_settings.cat13_promo1_sale_price}}</span></p>
+						{{else}}
+						<p class="promo-now"><span>${{theme_settings.cat13_promo1_og_price}}</span></p>
+						{{/if}}
+					</div>
+				</div>
+			</a>
+
+			<a href="{{theme_settings.cat13_promo2_linkA}}{{theme_settings.cat13_promo2_linkB}}" class="product-promo">
+				<div class="product-promo-description">
+					<p class="promo-title">{{theme_settings.cat13_promo2_name}}</p>
+					<p class="promo-details">{{theme_settings.cat13_promo2_descA}}{{theme_settings.cat13_promo2_descB}}</p>
+					<button class="promo-button">
+						<p class="button">Shop Now</p>
+					</button>
+				</div>
+				<div class="product-promo-figure">
+					<img class="promo-image"
+						src="https://cdn11.bigcommerce.com/s-upqfr8eszt/product_images/uploaded_images/{{theme_settings.cat13_promo2_image}}"
+						alt="{{theme_settings.cat13_promo2_name}}">
+					<div class="promo-price">
+						{{#if theme_settings.cat13_promo2_sale_enable}}
+						<p class="promo-was"><span>${{theme_settings.cat13_promo2_og_price}}</span></p>
+						<p class="promo-now">NOW <span>${{theme_settings.cat13_promo2_sale_price}}</span></p>
+						{{else}}
+						<p class="promo-now"><span>${{theme_settings.cat13_promo2_og_price}}</span></p>
+						{{/if}}
+					</div>
+				</div>
+			</a>
+
+		</section>
+	{{/if}}
+
+{{else if category.name '==' theme_settings.cat14_promo_name}}
+	{{#if theme_settings.cat14_promo_enable}}
+		<section class="category-promo" data-promo="{{theme_settings.cat14_promo_enable}}"
+			data-promo1-link="{{theme_settings.cat14_promo1_linkA}}{{theme_settings.cat14_promo1_linkB}}"
+			data-promo2-link="{{theme_settings.cat14_promo2_linkA}}{{theme_settings.cat14_promo2_linkB}}">
+
+			
+			<a href="{{theme_settings.cat14_promo1_linkA}}{{theme_settings.cat14_promo1_linkB}}" class="product-promo">
+				<div class="product-promo-description">
+					<p class="promo-title">{{theme_settings.cat14_promo1_name}}</p>
+					<p class="promo-details">{{theme_settings.cat14_promo1_descA}}{{theme_settings.cat14_promo1_descB}}</p>
+					<button class="promo-button">
+						<p class="button">Shop Now</p>
+					</button>
+				</div>
+				<div class="product-promo-figure">
+					<img class="promo-image"
+						src="https://cdn11.bigcommerce.com/s-upqfr8eszt/product_images/uploaded_images/{{theme_settings.cat14_promo1_image}}"
+						alt="{{theme_settings.cat14_promo1_name}}">
+					<div class="promo-price">
+						{{#if theme_settings.cat14_promo1_sale_enable}}
+						<p class="promo-was"><span>${{theme_settings.cat14_promo1_og_price}}</span></p>
+						<p class="promo-now">NOW <span>${{theme_settings.cat14_promo1_sale_price}}</span></p>
+						{{else}}
+						<p class="promo-now"><span>${{theme_settings.cat14_promo1_og_price}}</span></p>
+						{{/if}}
+					</div>
+				</div>
+			</a>
+
+			<a href="{{theme_settings.cat14_promo2_linkA}}{{theme_settings.cat14_promo2_linkB}}" class="product-promo">
+				<div class="product-promo-description">
+					<p class="promo-title">{{theme_settings.cat14_promo2_name}}</p>
+					<p class="promo-details">{{theme_settings.cat14_promo2_descA}}{{theme_settings.cat14_promo2_descB}}</p>
+					<button class="promo-button">
+						<p class="button">Shop Now</p>
+					</button>
+				</div>
+				<div class="product-promo-figure">
+					<img class="promo-image"
+						src="https://cdn11.bigcommerce.com/s-upqfr8eszt/product_images/uploaded_images/{{theme_settings.cat14_promo2_image}}"
+						alt="{{theme_settings.cat14_promo2_name}}">
+					<div class="promo-price">
+						{{#if theme_settings.cat14_promo2_sale_enable}}
+						<p class="promo-was"><span>${{theme_settings.cat14_promo2_og_price}}</span></p>
+						<p class="promo-now">NOW <span>${{theme_settings.cat14_promo2_sale_price}}</span></p>
+						{{else}}
+						<p class="promo-now"><span>${{theme_settings.cat14_promo2_og_price}}</span></p>
+						{{/if}}
+					</div>
+				</div>
+			</a>
+
+		</section>
+	{{/if}}
+
+{{else if category.name '==' theme_settings.cat15_promo_name}}
+	{{#if theme_settings.cat15_promo_enable}}
+		<section class="category-promo" data-promo="{{theme_settings.cat15_promo_enable}}"
+			data-promo1-link="{{theme_settings.cat15_promo1_linkA}}{{theme_settings.cat15_promo1_linkB}}"
+			data-promo2-link="{{theme_settings.cat15_promo2_linkA}}{{theme_settings.cat15_promo2_linkB}}">
+
+			
+			<a href="{{theme_settings.cat15_promo1_linkA}}{{theme_settings.cat15_promo1_linkB}}" class="product-promo">
+				<div class="product-promo-description">
+					<p class="promo-title">{{theme_settings.cat15_promo1_name}}</p>
+					<p class="promo-details">{{theme_settings.cat15_promo1_descA}}{{theme_settings.cat15_promo1_descB}}</p>
+					<button class="promo-button">
+						<p class="button">Shop Now</p>
+					</button>
+				</div>
+				<div class="product-promo-figure">
+					<img class="promo-image"
+						src="https://cdn11.bigcommerce.com/s-upqfr8eszt/product_images/uploaded_images/{{theme_settings.cat15_promo1_image}}"
+						alt="{{theme_settings.cat15_promo1_name}}">
+					<div class="promo-price">
+						{{#if theme_settings.cat15_promo1_sale_enable}}
+						<p class="promo-was"><span>${{theme_settings.cat15_promo1_og_price}}</span></p>
+						<p class="promo-now">NOW <span>${{theme_settings.cat15_promo1_sale_price}}</span></p>
+						{{else}}
+						<p class="promo-now"><span>${{theme_settings.cat15_promo1_og_price}}</span></p>
+						{{/if}}
+					</div>
+				</div>
+			</a>
+
+			<a href="{{theme_settings.cat15_promo2_linkA}}{{theme_settings.cat15_promo2_linkB}}" class="product-promo">
+				<div class="product-promo-description">
+					<p class="promo-title">{{theme_settings.cat15_promo2_name}}</p>
+					<p class="promo-details">{{theme_settings.cat15_promo2_descA}}{{theme_settings.cat15_promo2_descB}}</p>
+					<button class="promo-button">
+						<p class="button">Shop Now</p>
+					</button>
+				</div>
+				<div class="product-promo-figure">
+					<img class="promo-image"
+						src="https://cdn11.bigcommerce.com/s-upqfr8eszt/product_images/uploaded_images/{{theme_settings.cat15_promo2_image}}"
+						alt="{{theme_settings.cat15_promo2_name}}">
+					<div class="promo-price">
+						{{#if theme_settings.cat15_promo2_sale_enable}}
+						<p class="promo-was"><span>${{theme_settings.cat15_promo2_og_price}}</span></p>
+						<p class="promo-now">NOW <span>${{theme_settings.cat15_promo2_sale_price}}</span></p>
+						{{else}}
+						<p class="promo-now"><span>${{theme_settings.cat15_promo2_og_price}}</span></p>
+						{{/if}}
+					</div>
+				</div>
+			</a>
+
+		</section>
+	{{/if}}
+{{/if}}
+  

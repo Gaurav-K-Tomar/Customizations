@@ -1,0 +1,108 @@
+---
+category:
+    shop_by_price: true
+    products:
+        limit: {{theme_settings.categorypage_products_per_page}}
+---
+{{inject "categoryProductsPerPage" theme_settings.categorypage_products_per_page}}
+{{inject "categoryId" category.id}}
+{{#partial "head"}}
+    {{#if pagination.category.previous}}
+        <link rel="prev" href="{{pagination.category.previous}}">
+    {{/if}}
+    {{#if pagination.category.next}}
+        <link rel="next" href="{{pagination.category.next}}">
+    {{/if}}
+{{/partial}}
+
+{{#partial "page"}}
+
+{{#if category.image}}
+<div class="cat_img_wrapper">
+    {{> components/common/responsive-img
+        image=category.image
+        fallback_size=theme_settings.zoom_size
+        lazyload=theme_settings.lazyload_mode
+        class="category-header-image"
+    }}
+</div>
+{{/if}}
+{{#if banners.top}}
+    <div class="banners" data-banner-location="top">
+        {{#each (limit banners.top_metadata 1)}}
+        <div class="banner" data-event-type="promotion" data-entity-id="{{this.id}}" data-name="{{this.banner-name}}" data-position="{{this.location}}" data-banner-id="{{this.banner-name}}">
+            <div data-event-type="promotion-click">
+                {{{this.content}}}
+            </div>
+        </div>
+        {{/each}}
+        <div class="banner_cnt">
+            <div class="container">
+                <h2 class="page-heading">{{category.name}}</h2>
+                <div class="banner_cnt_breadcrumbs">{{> components/common/breadcrumbs breadcrumbs=breadcrumbs}}</div>
+            </div>
+        </div>
+    </div>
+     
+    {{else}}
+    
+{{/if}}
+<div class="main_breadcrumb{{#if banners.top}} banner_breadcrumbs{{/if}}">
+    <div class="container">
+        {{> components/common/breadcrumbs breadcrumbs=breadcrumbs}}
+    </div>
+</div>
+{{#if category.description}}
+<div class="cat_description">
+    <div class="container">
+        {{{category.description}}}
+    </div>
+</div>
+{{/if}}
+<div class="cat_promoBanners">
+	<div class="container">
+		{{> components/common/promo-banners}}
+	</div>
+</div>
+<div class="page cat_page">
+    <div class="container">
+        <div class="cat_left">
+        {{#if category.faceted_search_enabled}}
+            <aside class="page-sidebar" id="faceted-search-container">
+                {{> components/category/sidebar}}
+            </aside>
+        {{else if category.subcategories}}
+            <aside class="page-sidebar" id="faceted-search-container">
+                {{> components/category/sidebar}}
+            </aside>
+        {{else if category.shop_by_price}}
+            {{#if theme_settings.shop_by_price_visibility}}
+                 <aside class="page-sidebar" id="faceted-search-container">
+                    {{> components/category/sidebar}}
+                </aside>
+            {{/if}}
+        {{/if}}
+    </div>
+    <div class="cat_right">
+    <h1 class="page-heading">{{category.name}}</h1>
+    <main class="page-content" id="product-listing-container">
+        {{> components/category/product-listing}}
+        {{{region name="category_below_content"}}}
+    </main>
+	<div class="loadMore_btn">
+		 <a class="button" href="#" id="loadMore">Load More</a>
+	</div>
+</div>
+</div>
+</div>
+
+{{/partial}}
+{{> layout/base}}
+
+
+<style>
+.body > .container{max-width:100%;padding: 0;}
+.body{  margin:0;}
+
+</style>
+  
